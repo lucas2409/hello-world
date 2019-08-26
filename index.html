@@ -1,18 +1,44 @@
-<!DOCTYPE html>
-
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mania de Porção - Administração</title>
+        <link href="css/container.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <link href="css/camposdeTexto.css" rel="stylesheet">
+        <link href="css/botoes.css" rel="stylesheet">
+        <link href="css/forms.css" rel="stylesheet">
+        <script src="script/funcoes.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145670984-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-<body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
-</body>
+            gtag('config', 'UA-145670984-1');
+        </script>
+    </head>
+    <body id="body">
+        <div>
+            <img src="images/fundo.jpg"><br><br>	
+        </div>
+        <div>
+            <center>
+                <form id="formLogin">
+                    <div>
+                        <center>
+                            <b><a>Login</a></b>
+                            <input type="text" name="Login" id="campo">
+                            <br><br>
+                            <b><a>Senha</a></b>
+                            <input type="password" name="Senha"><br><br>
+                                <button type="button" class="botao botao-btn-info" onclick="bemVindo()">Login</button>
+                        </center>
+                    </div>
+                </form>
+            </center>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>Mania de porção - Principal</title>
+	<link href="css/container.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <link href="css/camposdeTexto.css" rel="stylesheet">
+        <link href="css/botoes.css" rel="stylesheet">
+        <link href="css/forms.css" rel="stylesheet">
+	<script src="script/funcoes.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145670984-1"></script>
+	<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-145670984-1');
+	</script>
+    </head>
+    <body id="body">
+	<div id="div">
+            <div>
+                <img src="images/fundo.jpg">		
+            </div>
+            <nav>
+		<ul class="menu">
+                    <li><a href="telaPrincipal.html">Home</a></li>
+                    <li><a href="#">Vendas</a>
+                        <ul>
+                            <li><a href="cadastrarVendas.html">Cadastrar vendas</a></li>
+                            <li><a href="#">Visualizar vendas</a></li>
+			</ul>
+                    </li>
+                    <li><a href="#">Cardápio</a>
+			<ul>
+                            <li><a href="cadastrarCardapio.html">Cadastrar cardápio</a></li>
+                            <li><a href="#">Visualizar cardápio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Suporte</a></li>
+		</ul>
+            </nav><br><br><br>
+	<form id="formVendas">
+            <div id="duplicar">
+            <b><a>Pedido </a></b>
+            <select>
+		<option>Batata Frita</option>
+		<option>Calabresa</option>
+		<option>Contra-File</option>
+		<option>Mandioca</option>
+		<option>Mini pastéis</option>
+		<option>Onion Rings</option>
+		<option>Pastel</option>
+		<option>Polenta</option>
+		<option>Porção Mista</option>
+            </select>
+	<b><a>Tamanho </a></b>
+            <select>
+		<option>Pequena</option>
+		<option>Média</option>
+		<option>Grande</option>
+		<option>Extra Grande</option>
+            </select>
+	<b><a>Quantidade</a></b>
+             <input id="quantidade" type="text">
+        <b><a>Solicitação</a></b>
+            <select>
+		<option>Presencial</option>
+		<option>WhatsApp</option>
+		<option>Uber Eats</option>
+		<option>IFood</option>
+		<option>Rappi</option>
+            </select>
+	<b><a>Forma de pagamento</a></b>
+            <select>
+		<option>Dinheiro</option>
+		<option>Cartão Débito</option>
+		<option>Cartão Crédito</option>
+		<option>Aplicativo</option>
+            </select>
+            <button type="button" class="botao-conf" onclick="duplicarCampos()" >Adc +</button>
+            <button type="button" class="botao-conf" onclick="excluirCampos()" >Exc -</button>
+	</div>
+	<div id='destino'>
+	</div>
+        </form><br>
+            <div>
+		<center>
+                    <button type="button" class="botao botao-btn-info" onclick="">Preço do pedido</button><br><br>
+                </center>
+            </div>
+	<div id="invisivel">
+        <form id="formVendas">
+            <h1>
+                <label>Valor Total</label>
+                <label>50.00</label>
+            </h1>	
+        </form><br>
+        </div>
+	<div>
+            <center>
+		<button type="button" class="botao botao-btn-info" onclick="mensagemGravado()">Finalizar pedido</button><br><br>
+            </center>
+	</div>
+	</div>
+    </body>
+</html>

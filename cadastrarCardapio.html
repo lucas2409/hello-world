@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Mania de Porção - Cadastrar cardápio</title>
+        <meta charset="UTF-8">
+	<link href="css/container.css" rel="stylesheet">
+        <link href="css/menu.css" rel="stylesheet">
+        <link href="css/camposdeTexto.css" rel="stylesheet">
+        <link href="css/botoes.css" rel="stylesheet">
+        <link href="css/forms.css" rel="stylesheet">
+	<script src="script/funcoes.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145670984-1"></script>
+	<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-145670984-1');
+	</script>
+    </head>
+    <body id="body">
+	<div id="div">
+            <div>
+                <img src="images/fundo.jpg">		
+            </div>
+            <nav >
+                <ul class="menu">
+                    <li><a href="telaPrincipal.html">Home</a></li>
+                    <li><a href="#">Vendas</a>
+                        <ul>
+                            <li><a href="cadastrarVendas.html">Cadastrar vendas</a></li>
+                            <li><a href="#">Visualizar vendas</a></li>
+			</ul>
+                    </li>
+                    <li><a href="#">Cardápio</a>
+			<ul>
+                            <li><a href="cadastrarCardapio.html">Cadastrar cardápio</a></li>
+                            <li><a href="#">Visualizar cardápio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Suporte</a></li>
+		</ul>
+            </nav><br><br><br>
+        </div>
+        <form id="formVendas">
+            <b><a>Nome </a></b> 
+            <input id="nome" type="text"><br><br><hr><br>
+            <div>
+                <table>
+                    <td>
+                        <b><a>Preço Peq &nbsp</a></b> 
+                    </td>
+                    <td>
+                        <input id="pp" type="checkbox" onclick="validaCheck()">
+                        <input id="peq" type="text" readonly><br>
+                    </td>
+                    <td>
+                        <b><a>Preço Med &nbsp</a></b>
+                    </td>
+                    <td>
+                        <input id="pm" type="checkbox" onclick="validaCheck()">
+                        <input id="med" type="text" readonly><br>
+                    </td>
+                    <td>
+                        <b><a>Preço Gra &nbsp</a></b>
+                    </td>
+                    <td>
+                        <input id="pg" type="checkbox" onclick="validaCheck()">
+                        <input id="gra" type="text" readonly><br>
+                    </td>
+                    <td>
+                        <b><a>Preço Ext &nbsp</a></b> 
+                    </td>
+                    <td>
+                        <input id="peg" type="checkbox" onclick="validaCheck()">
+                        <input id="egr" type="text" readonly=""><br>
+                    </td>
+                </table><br><hr><br>
+            </div>
+            <b><a>Descrição </a></b><br>
+            <textarea id="desc"></textarea><br><br><hr><br>
+            <div>
+                <center>
+                    <button type="button" class="botao botao-btn-info" onclick="">Salvar</button>
+                    <button type="button" class="botao botao-btn-canc" onclick="limparCampos()">Limpar</button><br>
+		</center>
+            </div>
+        </form>
+    </body>
+</html>
